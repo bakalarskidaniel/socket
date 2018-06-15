@@ -43,10 +43,10 @@
                 
                     writeResponse(roomId);
                 if (roomId){
-                    webSocket = new WebSocket("ws://localhost:8080/WebSocket/rooms/" + roomId);
+                    webSocket = new WebSocket("https://194908socket.azurewebsites.net/rooms/" + roomId);
   
                 }else{
-                     webSocket = new WebSocket("ws://localhost:8080/WebSocket/echo");
+                     webSocket = new WebSocket("https://194908socket.azurewebsites.net//echo");
                 
                 }
                 // Create a new instance of the websocket
